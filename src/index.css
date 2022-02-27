@@ -1,13 +1,187 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(187, 145, 7);
+  position: relative;
+}
+
+.container img {
+  width: 90%;
+  height: 90%;
+  /* padding: 50px; */
+}
+
+.box1 {
+  width: 270px;
+  height: 220px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: aquamarine; */
+  left: 180px;
+  top: 370px;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: rgb(26, 156, 113); */
+  left: 430px;
+  top: 260px;
+}
+.box3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: rgb(159, 173, 26); */
+  left: 660px;
+  top: 260px;
+}
+.box4 {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: rgb(9, 26, 97); */
+  left: 850px;
+  top: 260px;
+}
+.box5 {
+  width: 290px;
+  height: 280px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: rgb(14, 168, 40); */
+  left: 1070px;
+  top: 370px;
+}
+.box6 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: rgb(117, 11, 47); */
+  left: 630px;
+  top: 420px;
+}
+.box7 {
+  width: 350px;
+  height: 380px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: aquamarine; */
+  left: 80px;
+  top: 20px;
+}
+.box8 {
+  width: 350px;
+  height: 360px;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: aquamarine; */
+  left: 1100px;
+  top: 20px;
+}
+
+.box1:hover {
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+.box2:hover {
+  cursor: pointer;
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+.box3:hover {
+  cursor: pointer;
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+.box4:hover {
+  cursor: pointer;
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+.box5:hover {
+  cursor: pointer;
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+.box6:hover {
+  cursor: pointer;
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+.box7:hover {
+  cursor: pointer;
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+.box8:hover {
+  cursor: pointer;
+  background-color: rgb(197, 50, 50);
+  opacity: 50%;
+}
+
+
+.container h1 {
+  position: absolute;
+  top: 15px;
+  font-size: 80px;
+  color: white;
+}
+
+.flicker {
+  animation: flicker 3s linear infinite 3s;
+}
+.neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+    0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+    0 0 500px #0ff;
+}
+@keyframes flicker {
+  0% {
+    text-shadow: none;
+  }
+  6% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+      0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+      0 0 500px #0ff;
+  }
+  8% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+      0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+      0 0 500px #0ff;
+  }
+  12% {
+    text-shadow: none;
+  }
+  14% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff,
+      0 0 40px #0ff, 0 0 120px #0ff, 0 0 140px #0ff, 0 0 200px #0ff,
+      0 0 500px #0ff;
+  }
 }
